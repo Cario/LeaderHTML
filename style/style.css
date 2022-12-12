@@ -1,0 +1,72 @@
+table, td, tr{
+    border: solid black;
+}
+
+th {
+    background: black;
+}
+
+td {
+    background: whitesmoke;
+    color: black;
+    height: 50px;
+    width: 300px;
+    text-align: center;
+    vertical-align: middle;
+  }
+
+ table {
+   
+        margin-left: auto;
+        margin-right: auto;
+      
+ }
+
+ .center {
+    text-align: center;
+ }
+
+ .grey {
+    background-color: rgb(199, 199, 199);
+    color: black;
+ }
+
+ .blue {
+    background-color: blue;
+    color: white;
+ }
+
+ .purple{
+    background-color: rgb(65, 18, 65);
+    color: white;
+ }
+
+ .turquoise
+ {
+    background-color: rgb(55, 158, 153);
+    color: rgb(255, 255, 255);
+ }
+
+ .emerald
+ {
+    background-color: rgb(9, 126, 9);
+    color: rgb(255, 255, 255);
+ }
+
+ .button1
+ {
+    font-size: 30px;
+     margin: 8px 4px;
+ }
+
+ .button2
+ {
+    font-size: 30px;
+     padding: 10px 160px;
+ }
+
+ .button3
+ {
+    font-size: 15px;
+     padding: 10px 160px;
+ }

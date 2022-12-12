@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>New Player</title>
+    <script src="Add.js"></script>
+    <link rel="stylesheet" type="text/css" href="style/style.css">
+</head>
+<body class="purple">
+    <input type="button" onclick="Back()" value="Go Back">
+    <div style="text-align:right">
+        <a href="Games.html"> View Game Leaderboards</a> <br>
+        </div>
+    <div>
+    <h1>Add Player</h1>
+    <label>Player Name: </label> <br>
+    <input id="playerName" type="text"> <br> <br>
+    <label>Score: </label> <br>
+    <input id="score" type="number"> <br> <br>
+    <label>Time(hr:min:sec:ms): </label> <br> 
+    <input id="time" type="text"> <br> <br>
+        <br>
+    <input type="button" class="button1" onclick="sendPlayer()" value="Submit">
+    </div>
+    <div id = "hiDiv"> </div>
+</body>
+</html>
