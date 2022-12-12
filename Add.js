@@ -57,11 +57,14 @@ function sendPlayer(){
             var divTag = document.getElementById("hiDiv");
             divTag.innerHtml = `Server Response: ${jsonData.message}`;
             console.log(jsonData);
+            
+            if (jsonData.message != "Bad Time Format")
+            {
             window.location.href= `Leaderboard.html?id=${gameID}`
+            }
         })
         .catch((error)=>{
             console.log(`Error: ${error}`);
         });
     }
 }
-
