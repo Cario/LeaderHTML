@@ -26,7 +26,7 @@ function sendGame(){
             var divTag = document.getElementById("myDiv");
             divTag.innerHtml = `Server Response: ${jsonData.message}`;
             console.log(jsonData);
-            window.location.href='index.html?'
+            window.location.href='index.html'
         })
         .catch((error)=>{
             console.log(`Error: ${error}`);
