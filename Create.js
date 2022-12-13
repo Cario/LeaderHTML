@@ -6,11 +6,17 @@ function sendGame(){
     let platform = document.getElementById("platform").value;
     platform = platform.trim();
     console.log(platform);
-    if(gameName == null || gameName == ""){
+   if((gameName == null || gameName == "") && (platform == null || platform == "")){
+        console.log("Error: Empty GameName and Platform Field")
+        document.getElementById("hey").innerHTML = "Error: Empty GameName and Platform Field";
+    }
+    else if(gameName == null || gameName == ""){
         console.log("Error: Empty GameName Field")
+        document.getElementById("hey").innerHTML = "Error: Empty GameName Field";
     }
     else if(platform == null || platform == ""){
         console.log("Error: Empty PLatform Field")
+        document.getElementById("hey").innerHTML = "Error: Empty Platform Field";
     }
     else{
         let retData = `{"name" : "${gameName}", "platform" : "${platform}"}`
