@@ -31,7 +31,7 @@ function sendGame(){
         .then((jsonData)=>{
             var divTag = document.getElementById("myDiv");
             divTag.innerHtml = `Server Response: ${jsonData.message}`;
-            console.log(jsonData);
+            console.log(jsonData); 
             window.location.href='index.html'
         })
         .catch((error)=>{
