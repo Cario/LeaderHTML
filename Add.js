@@ -30,10 +30,12 @@ function sendPlayer(){
 
     if(player == null || player == ""){
         console.log("Error: Empty Player Field")
+        document.getElementById("server").innerHTML = "Error: Empty Player Field";
     }
 
     else if((time == null || time == "") && (score == null || score == "")){
-        console.log("Error: Empty Multiple Empty Fields")
+        console.log("Error: Multiple Empty Fields")
+        document.getElementById("server").innerHTML = "Error: Multiple Empty Fields";
     }
     
     else{
@@ -55,6 +57,7 @@ function sendPlayer(){
         .then ((response)=> response.json())
         .then((jsonData)=>{
             var divTag = document.getElementById("hiDiv");
+            document.getElementById("server").innerHTML = "Error: " +jsonData.message;
             divTag.innerHtml = `Server Response: ${jsonData.message}`;
             console.log(jsonData);
             
